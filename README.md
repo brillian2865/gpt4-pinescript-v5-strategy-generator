@@ -11,7 +11,7 @@
 > For traders who are done watching ChatGPT output broken V4 syntax.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)
-[![OpenAI](https://img.shields.io/badge/GPT--4o-Powered-412991?style=for-the-badge&logo=openai)](https://openai.com)
+[![Chutes AI](https://img.shields.io/badge/Chutes_AI-Powered-2196F3?style=for-the-badge)](https://llm.chutes.ai) [![OpenAI](https://img.shields.io/badge/OpenAI-Supported-412991?style=for-the-badge&logo=openai)](https://openai.com)
 [![TradingView](https://img.shields.io/badge/PineScript-V5_Only-2196F3?style=for-the-badge&logo=tradingview)](https://tradingview.com)
 [![Status](https://img.shields.io/badge/Status-Beta_%7C_Shipping_Daily-orange?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -181,7 +181,7 @@ Run as a command-line tool for rapid iteration, or import the generator class di
 
 ## 🚀 Installation — GPT4 PineScript V5 Strategy Generator
 
-**Prerequisites:** Python 3.11+, an OpenAI API key with GPT-4 access.
+**Prerequisites:** Python 3.11+, a Chutes AI API key (recommended) or OpenAI API key.
 
 **Step 1 — Clone the repository**
 
@@ -207,16 +207,17 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Open .env and set: OPENAI_API_KEY=sk-...
+# Open .env and set CHUTES_API_KEY (recommended) or OPENAI_API_KEY:
+# CHUTES_API_KEY=cpk-your-chutes-api-key-here
 ```
 
 **Step 5 — Run in safe preview mode first**
 
 ```bash
-python generate.py --mode preview
-# Outputs generated PineScript to terminal only — no files written
-# Confirm output quality before enabling --mode save
+python generate.py "EMA crossover strategy. Fast EMA 9, slow EMA 21. Long when fast crosses above slow and RSI is above 50. Short when fast crosses below slow and RSI is below 50. Use 1% stop loss and 2% take profit. Test on 4H chart." --mode preview
 ```
+
+Outputs generated PineScript to terminal only — no files written. Confirm output quality before enabling `--mode save`.
 
 ---
 
@@ -248,6 +249,16 @@ default_commission_pct: 0.05
 default_slippage_ticks: 2
 default_qty_type: "percent_of_equity"
 default_qty_value: 10
+```
+
+---
+
+## 🧪 Testing
+
+Run the test suite (no API key required — tests use mocks):
+
+```bash
+python test_generate.py
 ```
 
 ---

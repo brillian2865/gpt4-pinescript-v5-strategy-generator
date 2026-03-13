@@ -1,0 +1,29 @@
+# config.yaml — GPT4 PineScript V5 Strategy Generator
+
+# ── API Provider ──────────────────────────────────────────────────────────────
+# Use CHUTES_API_KEY for Chutes AI (llm.chutes.ai) | OPENAI_API_KEY for OpenAI
+# Chutes models: Qwen/Qwen2.5-Coder-32B-Instruct, unsloth/Llama-3.2-3B-Instruct, etc.
+
+# ── Model Settings ───────────────────────────────────────────────────────────
+model: "Qwen/Qwen2.5-Coder-32B-Instruct"  # Chutes default; use gpt-4o for OpenAI
+temperature: 0.2                 # Low = more deterministic V5 syntax compliance
+max_tokens: 2048                 # Sufficient for strategies up to ~120 lines
+structured_output: true          # Forces JSON-wrapped code return for parsing
+
+# ── Validation Settings ──────────────────────────────────────────────────────
+validation_enabled: true         # Run post-generation V5 syntax validator
+max_regeneration_attempts: 2     # Retry limit on validation failure
+fail_on_validation_error: false  # If true, raises exception instead of warning
+
+# ── Output Settings ──────────────────────────────────────────────────────────
+output_mode: "preview"           # "preview" | "save" | "clipboard"
+output_dir: "./strategies"       # Used when output_mode is "save"
+include_timestamp_header: true   # Adds generation timestamp block to output
+include_input_as_comment: true   # Embeds your English description as a comment
+
+# ── Strategy Defaults (injected if not specified in your prompt) ─────────────
+default_initial_capital: 10000
+default_commission_pct: 0.05
+default_slippage_ticks: 2
+default_qty_type: "percent_of_equity"
+default_qty_value: 10
