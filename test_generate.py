@@ -147,6 +147,7 @@ def test_cli_no_description():
 
 def test_regeneration_on_validation_failure():
     """Generator regenerates when first response fails validation."""
+    import logging
     from generator import generate_strategy
 
     bad_response = '{"code": "study(\\"bad\\")"}'  # Fails: study() deprecated
@@ -163,17 +164,22 @@ def test_regeneration_on_validation_failure():
         r.choices[0].message.content = responses[idx]
         return r
 
-    with patch("generator.OpenAI") as mock_openai, patch.dict(os.environ, {"CHUTES_API_KEY": "cpk-test"}):
-        mock_client = MagicMock()
-        mock_client.chat.completions.create = mock_create
-        mock_openai.return_value = mock_client
+    # Suppress expected "Validation attempt N failed" warning during test
+    logging.getLogger("generator").setLevel(logging.ERROR)
+    try:
+        with patch("generator.OpenAI") as mock_openai, patch.dict(os.environ, {"CHUTES_API_KEY": "cpk-test"}):
+            mock_client = MagicMock()
+            mock_client.chat.completions.create = mock_create
+            mock_openai.return_value = mock_client
 
-        code, valid = generate_strategy(
-            "test",
-            model="test-model",
-            validation_enabled=True,
-            max_regeneration_attempts=2,
-        )
+            code, valid = generate_strategy(
+                "test",
+                model="test-model",
+                validation_enabled=True,
+                max_regeneration_attempts=2,
+            )
+    finally:
+        logging.getLogger("generator").setLevel(logging.WARNING)
 
     assert call_count[0] >= 2, "Should have called API at least twice (1 fail + 1 retry)"
     assert valid
