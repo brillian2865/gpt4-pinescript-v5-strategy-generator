@@ -35,8 +35,11 @@ Every strategy() call MUST include:
 
 ### 5. strategy.exit()
 - MUST include from_entry="EntryId" linking to strategy.entry ID
-- Use loss= and profit= for stop-loss and take-profit
-- Example: strategy.exit("Exit", from_entry="Long", loss=stop_val, profit=tp_val)
+- For PERCENTAGE-based stop-loss/take-profit: use stop= and limit= with price levels (loss= and profit= are in ticks, NOT percentages)
+- LONG: stop = strategy.position_avg_price * (1.0 - sl_pct), limit = strategy.position_avg_price * (1.0 + tp_pct)
+- SHORT: stop = strategy.position_avg_price * (1.0 + sl_pct), limit = strategy.position_avg_price * (1.0 - tp_pct)
+- For percentage inputs: use input.float(2.0, "Stop Loss (%)") / 100 so user enters 2 for 2%
+- Example: sl_pct = input.float(2.0, "Stop Loss %") / 100 ; tp_pct = input.float(4.0, "Take Profit %") / 100 ; long_stop = strategy.position_avg_price * (1.0 - sl_pct) ; long_tp = strategy.position_avg_price * (1.0 + tp_pct) ; strategy.exit("Exit Long", from_entry="Long", stop=long_stop, limit=long_tp)
 
 ### 6. Type System
 - Use ta. prefix for indicators: ta.ema(), ta.rsi(), ta.crossover(), ta.crossunder()
