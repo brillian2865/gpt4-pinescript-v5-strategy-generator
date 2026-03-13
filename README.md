@@ -2,6 +2,10 @@
 <!-- how to generate pinescript v5 with gpt | convert trading idea to pinescript v5 | build pinescript strategy with ai 2026 | natural language to pinescript v5 | fix pinescript v5 compile errors with gpt -->
 <!-- best ai pinescript generator 2026 | pinescript v5 strategy generator full version | get pinescript v5 generator access | contact pinescript ai developer | ai trading strategy code generator -->
 
+<p align="center">
+  <img src="media.gif" alt="GPT4 PineScript V5 Strategy Generator Demo" width="100%">
+</p>
+
 <div align="center">
 
 # GPT4 PineScript V5 Strategy Generator
