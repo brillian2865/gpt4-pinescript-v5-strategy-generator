@@ -1,32 +1,37 @@
-<!-- gpt4 pinescript v5 strategy generator | pinescript v5 ai code generator | gpt pinescript generator github -->
-<!-- how to generate pinescript v5 with gpt | convert trading idea to pinescript v5 | build pinescript strategy with ai 2026 | natural language to pinescript v5 | fix pinescript v5 compile errors with gpt -->
-<!-- best ai pinescript generator 2026 | pinescript v5 strategy generator full version | get pinescript v5 generator access | contact pinescript ai developer | ai trading strategy code generator -->
-
-<p align="center">
-  <img src="media.gif" alt="GPT4 PineScript V5 Strategy Generator Demo" width="100%">
-</p>
-
 <div align="center">
 
-# GPT4 PineScript V5 Strategy Generator
+# GPT-4 PineScript V5 Strategy Generator
 
-### *Plain English in. Backtest-ready PineScript V5 out. Zero compile errors.*
+### Generate PineScript V5 strategies from plain English using GPT-4
+<p align="center">
+  <img src="media.gif" alt="GPT-4 PineScript V5 Strategy Generator demo" width="100%">
+</p>
 
-> For traders who are done watching ChatGPT output broken V4 syntax.
-
-[![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Chutes AI](https://img.shields.io/badge/Chutes_AI-Powered-2196F3?style=for-the-badge)](https://llm.chutes.ai) [![OpenAI](https://img.shields.io/badge/OpenAI-Supported-412991?style=for-the-badge&logo=openai)](https://openai.com)
-[![TradingView](https://img.shields.io/badge/PineScript-V5_Only-2196F3?style=for-the-badge&logo=tradingview)](https://tradingview.com)
-[![Status](https://img.shields.io/badge/Status-Beta_%7C_Shipping_Daily-orange?style=for-the-badge)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-**[→ How It Works](#-how-it-works--the-v5-difference) · [→ Live Output Example](#-plain-english-to-pinescript-v5--live-example) · [→ vs. Vanilla ChatGPT](#-why-not-just-use-chatgpt) · [→ Full Private Build](#-want-the-full-strategy-engine)**
+</div>
 
 ---
 
-*A private extended version of this engine exists with multi-timeframe confluence, portfolio-level strategy generation, and automated backtest result parsing. Serious traders who scroll to the bottom find out how to access it.*
+## What This Project Does
 
-</div>
+This repository is an **AI PineScript V5 strategy generator** built for traders, developers, and TradingView users who want to turn trading ideas into usable PineScript code faster.
+
+Instead of manually writing PineScript or debugging broken AI output, you can describe a strategy in plain English, such as:
+
+- EMA crossover strategy
+- RSI and MACD confirmation setup
+- breakout or mean reversion logic
+- stop loss and take profit rules
+- long/short entry conditions
+- timeframe-specific backtesting ideas
+
+The generator uses **GPT-4** with a **PineScript V5-focused prompt architecture** and a **post-generation validator** to produce cleaner, more reliable TradingView strategy code.
+
+This project is useful for:
+
+- traders who want to test ideas quickly
+- developers building trading tools
+- researchers creating PineScript strategies programmatically
+- TradingView users who need faster strategy iteration
 
 ---
 
@@ -327,31 +332,3 @@ That context makes the conversation worth having for both sides.
 *Traders who have done the work to find this section are the ones this is built for.*
 
 ---
-
-## ⚠️ Risk Disclaimer
-
-**Financial Risk:** This software generates PineScript code for backtesting purposes only. Past backtest performance does not predict future live trading results. Backtests are subject to look-ahead bias, overfitting, and survivorship bias. No output from this tool constitutes financial advice. Never risk capital you cannot afford to lose.
-
-**Software Risk:** This project is in active beta development (v0.1.x). Generated code is validated against known error patterns but not guaranteed to be free of all logical or runtime errors. Review all generated strategies before using them in live or paper trading environments. The validator catches syntax errors — it does not evaluate trading logic quality.
-
----
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-**Built with** Python 3.11 · OpenAI GPT-4o · PineScript V5 · TradingView Strategy Tester
-
-*From trading idea to compiled backtest in under 60 seconds.*
-
----
-
-[⬆ Back to Top](#gpt4-pinescript-v5-strategy-generator)
-
-</div>
-
-<!-- get pinescript v5 generator access | gpt4 pinescript full version | contact pinescript ai developer github | pinescript v5 strategy generator private build | ai pinescript generator full access Rezzecup -->
